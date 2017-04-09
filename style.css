@@ -311,10 +311,21 @@ img{
         skills  section style
 
 ************************************************/
-.programming{
+.language{
+  border:1px solid black;
+  border-radius:5px;
+}
+#programming{
+  padding:0;
   margin-bottom: 50px;
 }
+#programming img{
+  height:90px;
+  width:auto;
+  margin:5px;
+}
 #skills{
+  background: rgb(249, 243, 218);
   padding:100px 0 ;
 }
 #skills h1{
@@ -324,41 +335,37 @@ img{
   text-align:center;
   font-family: 'Acme', sans-serif;
 }
+
 #skills h2{
   background-color:rgb(0,128,128);
+  margin:0 0 5px;
   padding:5px;
-  margin:0;
   font-size:25px;
   text-align:center;
-  font-family:dosisregular,sans-cherif;
+  font-family:"dosisregular",sans-cherif;
 }
 
 #skills_intro{
-  text-align:center;
+  text-align:justify;
+  padding:25px;
+  color:rgb(40, 38, 31);
   font-size:25px;
   font-family:Arima Madurai, cursive;
   line-height:50px;
- margin:0 auto 20px;
+  -webkit-animation-name:zoomIn 3s;
+  animation:zoomIn 3s;
+
 }
 
 #skills_wrapper{
   padding-top:50px;
 }
-table, table tr{
 
-  width:100%;
-}
-table th{
-  width:30%;
-  height:50px;
-  font-size:20px;
-  text-align:center;
-  border:1px solid black;
-  background:rgb(224, 218, 218);
-}
 
 .webdevelopment{
   margin-bottom: 50px;
+  border:1px solid black;
+  border-radius:5px;
 }
 /***********************end of skills section**************************/
 
