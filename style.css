@@ -1,0 +1,378 @@
+/*******************************************
+ Some general css stuffs to overwrite deffault setting
+********************************************/
+body{
+  padding:0;
+}
+.container-fluid{
+  font-family:Arima Madurai, cursive;
+
+}
+#main{
+  padding:0;
+}
+#main .row{
+  margin:0;
+}
+/**************************************************
+   date and time  component style;
+
+***************************************************/
+#author{
+  font-style:italic;
+}
+#authorandquote{
+  margin-top:10px;
+  font-family:Arima Madurai, cursive;
+  font-size:20px;
+}
+
+#date{
+  background-color:rgb(15, 23, 33);
+  color:white;
+  font-size:20px;
+  text-align:center;
+
+  padding:10px 20px;
+}
+#date_and_time{
+  border:2px solid rgb(15, 23, 33);
+}
+
+
+#gmt-time{
+  padding:0;
+  text-align:center;
+  font-family:Arima Madurai, cursive;
+}
+
+#gmt-time h3{
+  margin:0;
+  font-size:15px;
+  font-weight:bold;
+  /*background-color:rgb(204, 102, 0);*/
+}
+#header{
+
+
+}
+#header .row {
+
+}
+#menu{
+  padding:0px;
+}
+#menu a{
+
+  color:rgb(0,0,0);
+}
+#name{
+  padding:20px;
+  color:rgb(15, 23, 33);
+  font-size:25px;
+}
+nav{
+  background:rgb(255,255,255);
+}
+.navbar-brand, .navbar-nav{
+  padding:0;/* clear the default setting*/
+}
+#navigation{
+  background:#fbf6ee;
+}
+#time_wrapper{
+  margin:0;
+  padding:8px 20px;
+  color:rgb(15, 23, 33);
+  font-size:20px;
+  font-weight:bold;
+
+   /*background-color:rgb(75, 0, 130);*/
+}
+@media screen and (max-width:765px){
+
+  #gmt-time, #menu{
+    display:none;
+  }
+}
+
+
+/**************************************************
+   about me and page head section
+
+***************************************************/
+
+ #announce{
+   /*font-size:2vw;*/
+   font-size:25px;
+   text-align:center;
+   padding:30px 0 30px 20px;
+   clear:right;
+   font-family:dosisregular,sans-cherif;
+ }
+
+ #announce a{
+   /* change the color later*/
+   /*color:rgb(255,255,255);*/
+   /*text-decoration:underline;*/
+ }
+
+ #announce span{
+   font-family:dosisregular,sans-cherif;
+   /*font-size:3.5vw;*/
+   font-size:45px;
+   color:rgb(0,0,0);
+   font-weight:bold;
+ }
+
+#more_about{
+  font-size:60px;
+  padding-top:25px;
+  visibility:hidden;
+  text-align:center;
+  -webkit-animation:move 2s infinite;
+   animation: move 2s infinite;
+}
+#more_about i{
+  width:60px;
+  height:60px;
+  border:2px solid black;
+  border-radius:60%
+}
+
+
+@keyframes move {
+  50% {
+    visibility: hidden;
+  }
+  100%{
+    visibility: visible;
+  }
+}
+@-webkit-keyframes move{
+  50% {
+    visibility: hidden;
+  }
+  100%{
+    visibility: visible;
+  }
+
+}
+
+ #page_head{
+   margin:50px 0;
+}
+@media screen and (max-width:765px){
+  #announce{
+    font-size:18px;
+
+  }
+  #announce span{
+    font-size:30px;
+  }
+}
+
+/* **********************************************
+
+          About me section style
+
+ ************************************************/
+#about_me{
+  padding:50px 0;
+  font-family:dosisregular,sans-cherif;
+  background:rgb(88, 183, 146);
+  font-size:25px;
+  text-align:center;
+}
+#about_me_wrapper p{
+  margin-top:50px;
+  text-align: initial;
+}
+#about_me i {
+   font-size:100px;
+}
+#presentation, #interest{
+ padding-top:20px;
+
+}
+
+@media screen and (max-width:800px){
+  #about_me {
+    /*padding: 50px;*/
+  }
+  #presentation, #interest{
+   width:80%;
+   margin:0 auto;
+   border:1px solid black;
+     margin-bottom:100px;
+  }
+  #about_me_wrapper p{
+    text-align:initial;
+  }
+}
+
+/* **********************************************
+
+         portofolio  section style
+
+************************************************/
+.img_wrapper{
+  position:relative;
+  margin:10px;
+}
+
+img{
+  width:100%;
+  height:auto;
+}
+#portofolio{
+  font-family:dosisregular,sans-cherif;
+  text-align:center;
+  padding-top:50px;
+  background-color: rgb(224, 218, 218);/*rgb(44, 35, 36);/*rgb(52, 51, 56);*/
+
+}
+
+#portofolio h1{
+  font-family: Arima Madurai, cursive;
+  padding:25px 0;
+  }
+
+#portofolio_text{
+  font-family:dosisregular,sans-cherif;
+  font-size:25px;
+  text-align:center;
+  margin-bottom:50px;
+}
+
+#portofolio_text a{
+  color:rgb(0,128,128);
+}
+
+.projects{
+  background:rgb(68, 40, 41);
+  border:2px solid rgb(68, 40, 41);
+  margin-bottom: 50px;
+}
+.project_title{
+  font-family: Arima Madurai, cursive;
+  color:rgb(149, 149, 149);
+  font-size:25px;
+}
+
+@media screen and (max-width:768px){
+  .projects{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+  }
+}
+
+/* **********************************************
+
+        skills  section style
+
+************************************************/
+.programming{
+  margin-bottom: 50px;
+}
+#skills{
+  padding:100px 0 ;
+}
+#skills h1{
+  padding:10px 0 20px;
+  color:rgb(0,0,0);
+  font-size:40px;
+  text-align:center;
+  font-family: 'Acme', sans-serif;
+}
+#skills h2{
+  background-color:rgb(0,128,128);
+  padding:5px;
+  margin:0;
+  font-size:25px;
+  text-align:center;
+  font-family:dosisregular,sans-cherif;
+}
+
+#skills_intro{
+  text-align:center;
+  font-size:25px;
+  font-family:Arima Madurai, cursive;
+  line-height:50px;
+ margin:0 auto 20px;
+}
+
+#skills_wrapper{
+  padding-top:50px;
+}
+table, table tr{
+
+  width:100%;
+}
+table th{
+  width:30%;
+  height:50px;
+  font-size:20px;
+  text-align:center;
+  border:1px solid black;
+  background:rgb(224, 218, 218);
+}
+
+.webdevelopment{
+  margin-bottom: 50px;
+}
+/***********************end of skills section**************************/
+
+
+/* **********************************************
+
+       contacts  section style
+
+************************************************/
+#address{
+
+}
+#address p{
+  margin:0 10px;
+}
+
+#contacts{
+  font-size: 25px;
+  border:1px solid black;
+  padding:50px 0;
+  text-align: center;
+  background:rgb(15, 23, 33);/*rgb(0,128,128);*/
+  font-family: 'Acme', sans-serif;
+  color:white;
+}
+#dev_profiles{
+
+}
+#dev_profiles button{
+  background: white;
+  margin:0 5px;
+  border-radius:50%;
+}
+#mobile, #email{
+  margin:5px 20px;
+  display:inline-block;
+}
+
+/***********************end of contacts section**************************/
+
+/* **********************************************
+
+       footer style
+
+************************************************/
+
+footer{
+  margin:-15px;
+  padding:10px;
+  text-align:center;
+  color:rgb(255,255,255);
+  background-color:rgb(47, 79, 79);
+}
+
+/***********************end of footer **************************/
