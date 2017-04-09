@@ -6,7 +6,6 @@ body{
 }
 .container-fluid{
   font-family:Arima Madurai, cursive;
-
 }
 #main{
   padding:0;
@@ -14,56 +13,10 @@ body{
 #main .row{
   margin:0;
 }
-/**************************************************
-   date and time  component style;
-
-***************************************************/
-#author{
-  font-style:italic;
-}
-#authorandquote{
-  margin-top:10px;
-  font-family:Arima Madurai, cursive;
-  font-size:20px;
-}
-
-#date{
-  background-color:rgb(15, 23, 33);
-  color:white;
-  font-size:20px;
-  text-align:center;
-
-  padding:10px 20px;
-}
-#date_and_time{
-  border:2px solid rgb(15, 23, 33);
-}
-
-
-#gmt-time{
-  padding:0;
-  text-align:center;
-  font-family:Arima Madurai, cursive;
-}
-
-#gmt-time h3{
-  margin:0;
-  font-size:15px;
-  font-weight:bold;
-  /*background-color:rgb(204, 102, 0);*/
-}
-#header{
-
-
-}
-#header .row {
-
-}
 #menu{
   padding:0px;
 }
 #menu a{
-
   color:rgb(0,0,0);
 }
 #name{
@@ -75,7 +28,7 @@ nav{
   background:rgb(255,255,255);
 }
 .navbar-brand, .navbar-nav{
-  padding:0;/* clear the default setting*/
+  padding:0;
 }
 #navigation{
   background:#fbf6ee;
@@ -86,8 +39,6 @@ nav{
   color:rgb(15, 23, 33);
   font-size:20px;
   font-weight:bold;
-
-   /*background-color:rgb(75, 0, 130);*/
 }
 @media screen and (max-width:765px){
 
@@ -98,7 +49,7 @@ nav{
 
 
 /**************************************************
-   about me and page head section
+   page head section
 
 ***************************************************/
 
@@ -242,7 +193,7 @@ nav{
    width:80%;
    margin:0 auto;
    border:1px solid black;
-     margin-bottom:100px;
+  margin-bottom:100px;
   }
   #about_me_wrapper p{
     text-align:initial;
@@ -333,7 +284,7 @@ img{
   color:rgb(0,0,0);
   font-size:40px;
   text-align:center;
-  font-family: 'Acme', sans-serif;
+  font-family: Arima Madurai, cursive;
 }
 
 #skills h2{
@@ -350,7 +301,7 @@ img{
   padding:25px;
   color:rgb(40, 38, 31);
   font-size:25px;
-  font-family:Arima Madurai, cursive;
+  font-family:dosisregular,sans-cherif;
   line-height:50px;
   -webkit-animation-name:zoomIn 3s;
   animation:zoomIn 3s;
@@ -387,7 +338,7 @@ img{
   border:1px solid black;
   padding:50px 0;
   text-align: center;
-  background:rgb(15, 23, 33);/*rgb(0,128,128);*/
+  background:rgb(15, 23, 33);
   font-family: 'Acme', sans-serif;
   color:white;
 }
