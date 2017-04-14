@@ -6,9 +6,8 @@ body{
   padding:0;
   margin:0;
 }
-.row{
-  margin:0;
-}
+
+/*   menu style*/
 #menu{
   padding:0 15px 0 0;
 }
@@ -39,14 +38,8 @@ nav{
 .navbar-brand, .navbar-nav {
   padding:0;
 }
-.navbar-header button{
-}
 .navbar-header span{
   font-size: 2px;
-}
-
-
-#navigation{
 }
 
 @media screen and (max-width:830px){
@@ -72,33 +65,6 @@ nav{
    font-family: 'Libre Franklin', sans-serif;
  }
 
-.zoomIn{
-  -webkit-animation-name:zoomIn 5s;
-  animation:zoomIn 5s;
-}
-@keyframes zoomIn {
-  from {
-      opacity: 0;
-      -webkit-transform: scale(.5, .5);
-      transform: scale(.5, .5);
-    }
-
-    50% {
-      opacity: 1;
-  }
-}
-@-webkit-keyframes zoomIn{
-  from {
-      opacity: 0;
-      -webkit-transform: scale(.5, .5);
-      transform: scale(.5, .5);
-    }
-
-    50% {
-      opacity: 1;
-  }
-
-}
  #announce p{
    width:100%;
    text-align:center;
@@ -122,8 +88,7 @@ nav{
 #more_about{
   font-size:60px;
   height: 30%;
-  padding-top:25px;
-  visibility:hidden;
+  padding-top:20px;
   text-align:center;
   -webkit-animation:move 2s infinite;
    animation: move 2s infinite;
@@ -135,41 +100,12 @@ nav{
   border-radius:60%
 }
 
-
-@keyframes move {
-  50% {
-    visibility: hidden;
-  }
-  100%{
-    visibility: visible;
-  }
-}
-@-webkit-keyframes move{
-  50% {
-    visibility: hidden;
-  }
-  100%{
-    visibility: visible;
-  }
-
-}
-
- #page_head{
+#page_head{
    height:100vh;
    margin:50px 0 0;
    color:rgb(255,255,255)
 }
 
-#page_v_align_helper{
-  /*display:inline;
-  vertical-align: middle;*/
-
-}
-#page_head_wrapper{
-  /*margin:0 auto;
-  height:80%;
-  border:1px solid black;*/
-}
 @media screen and (max-width:765px){
   #announce{
     font-size:18px;
@@ -248,10 +184,6 @@ nav{
   margin:10px;
 }
 
-img{
-  width:100%;
-  height:auto;
-}
 #portofolio{
   font-family: 'Libre Franklin', sans-serif;
   text-align:center;
@@ -263,8 +195,12 @@ img{
   font-weight: 700;
   padding:25px 0;
   }
-#project_line_one{
+
+#portofolio img{
+    width:100%;
+    height:auto;
 }
+
 #portofolio_text{
   font-size:25px;
   text-align:center;
@@ -292,23 +228,18 @@ img{
     margin-right:auto;
   }
 }
-.row{
-
-}
 /* **********************************************
 
         skills  section style
 
 ************************************************/
 #language{
-
-font-size: 100px;
-width:60%;
-margin:100px auto;
+  font-size: 100px;
+  width:60%;
+  margin:100px auto;
 }
 
 #skills{
-
   font-family: 'Libre Franklin', sans-serif;
   padding:100px 0 ;
 }
@@ -367,9 +298,6 @@ margin:100px auto;
        contacts  section style
 
 ************************************************/
-#address{
-
-}
 #address p{
   margin:0 10px;
 }
@@ -381,9 +309,7 @@ margin:100px auto;
   padding:50px 0;
   text-align: center;
 }
-#dev_profiles{
 
-}
 #dev_profiles button{
   margin:0 5px;
   border:none;
@@ -411,3 +337,50 @@ footer{
 }
 
 /***********************end of footer **************************/
+
+/* animation of some components */
+.zoomIn{
+  -webkit-animation-name:zoomIn 5s;
+  animation:zoomIn 5s;
+}
+@keyframes zoomIn {
+  from {
+      opacity: 0;
+      -webkit-transform: scale(.5, .5);
+      transform: scale(.5, .5);
+    }
+
+    50% {
+      opacity: 1;
+  }
+}
+@-webkit-keyframes zoomIn{
+  from {
+      opacity: 0;
+      -webkit-transform: scale(.5, .5);
+      transform: scale(.5, .5);
+    }
+
+    50% {
+      opacity: 1;
+  }
+
+}
+
+@keyframes move {
+  50% {
+    visibility: hidden;
+  }
+  100%{
+    visibility: visible;
+  }
+}
+@-webkit-keyframes move{
+  50% {
+    visibility: hidden;
+  }
+  100%{
+    visibility: visible;
+  }
+
+}
