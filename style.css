@@ -1,49 +1,57 @@
-/*******************************************
- Some general css stuffs to overwrite deffault setting
-********************************************/
 body{
+  background-color: rgb(64, 64, 64);
   padding:0;
-}
-.container-fluid{
-  font-family:Arima Madurai, cursive;
 }
 #main{
   padding:0;
+  margin:0;
 }
-#main .row{
+.row{
   margin:0;
 }
 #menu{
-  padding:0px;
+  padding:0 15px 0 0;
 }
 #menu a{
-  color:rgb(0,0,0);
+ color:rgb(153, 153, 153);
 }
+
+#menu ul{
+  font-size:16px;
+}
+
 #name{
-  padding:20px;
-  color:rgb(15, 23, 33);
-  font-size:25px;
+  padding-left:20px;
+  padding-right: 20px;
+  background-color: rgb(255,255,255);
+  border-radius: 5px;
+  font-size:20px;
+  line-height: 50px;
+  color:rgb(153, 153, 153);
 }
+
 nav{
-  background:rgb(255,255,255);
+
+  background-color: rgb(227, 226, 222);
+  margin:0;
+  padding:0 20px;
 }
-.navbar-brand, .navbar-nav{
+.navbar-brand, .navbar-nav {
   padding:0;
 }
-#navigation{
-  background:#fbf6ee;
+.navbar-header button{
 }
-#time_wrapper{
-  margin:0;
-  padding:8px 20px;
-  color:rgb(15, 23, 33);
-  font-size:20px;
-  font-weight:bold;
+.navbar-header span{
+  font-size: 2px;
 }
-@media screen and (max-width:765px){
 
-  #gmt-time, #menu{
-    display:none;
+
+#navigation{
+}
+
+@media screen and (max-width:830px){
+  #menu a{
+    padding:8px;
   }
 }
 
@@ -54,16 +62,20 @@ nav{
 ***************************************************/
 
  #announce{
-   display:table;
+   display:table-cell;
+   vertical-align: middle;
    width:100%;
-   height:70%;
+   height:100%;
    font-size:25px;
    padding:30px 0 30px 20px;
-   font-family:dosisregular,sans-cherif;
-   -webkit-animation-name:zoomIn 3s;
-   animation:zoomIn 3s;
+   color:white;
+   font-family: 'Libre Franklin', sans-serif;
  }
 
+.zoomIn{
+  -webkit-animation-name:zoomIn 5s;
+  animation:zoomIn 5s;
+}
 @keyframes zoomIn {
   from {
       opacity: 0;
@@ -88,18 +100,23 @@ nav{
 
 }
  #announce p{
-   display:table-cell;
    width:100%;
-   height:100%;
    text-align:center;
-   vertical-align: middle;
  }
 
  #announce span{
-   font-family:dosisregular,sans-cherif;
    font-size:45px;
    color:rgb(0,0,0);
    font-weight:bold;
+ }
+ span#me{
+   color:rgb(174, 176, 175);!important
+ }
+ #announce_wrapper{
+   position:relative;
+   width:100%;
+   height:70%;
+   display:table;
  }
 
 #more_about{
@@ -139,8 +156,10 @@ nav{
 
  #page_head{
    height:100vh;
-   margin:50px 0;
+   margin:50px 0 0;
+   color:rgb(255,255,255)
 }
+
 #page_v_align_helper{
   /*display:inline;
   vertical-align: middle;*/
@@ -167,34 +186,53 @@ nav{
 
  ************************************************/
 #about_me{
-  padding:50px 0;
-  font-family:dosisregular,sans-cherif;
-  background:rgb(88, 183, 146);
-  font-size:25px;
+  padding:100px 0;
+  font-family: 'Libre Franklin', sans-serif;
+  background:rgb(255,255,255);/*rgb(88, 183, 146);*/
   text-align:center;
+  height:100vh;
+  opacity: 0;
+}
+#about_me h1{
+  color:rgb(17, 171, 180);
+  font-weight: 700;
+  width:60%;
+  position:relative;
+  margin-bottom:0;
+  padding-bottom: 15px;
+  margin:0 auto;
 }
 #about_me_wrapper p{
-  margin-top:50px;
+  font-size: 25px;
+  line-height: 50px;
+  display:table-cell;
+  vertical-align: middle;
   text-align: initial;
+  border-bottom: 5px solid rgb(17, 171, 180);
+  border-top: 5px solid rgb(17, 171, 180);
 }
-#about_me i {
-   font-size:100px;
-}
-#presentation, #interest{
- padding-top:20px;
 
+#about_me_wrapper{
+  display:table;
+  margin-top:0;
+  height:100%;
+  width:60%;
+  margin:0 auto;
 }
+@media (max-width:768px){
+  #about_me_wrapper{
+    width:90%;
+    overflow-y: visible;
+  }
+  #about_me_wrapper p{
+    font-size: 20px;
+    line-height: 40px;
+  }
+}
+
 
 @media screen and (max-width:800px){
-  #about_me {
-    /*padding: 50px;*/
-  }
-  #presentation, #interest{
-   width:80%;
-   margin:0 auto;
-   border:1px solid black;
-  margin-bottom:100px;
-  }
+
   #about_me_wrapper p{
     text-align:initial;
   }
@@ -215,20 +253,19 @@ img{
   height:auto;
 }
 #portofolio{
-  font-family:dosisregular,sans-cherif;
+  font-family: 'Libre Franklin', sans-serif;
   text-align:center;
   padding-top:50px;
-  background-color: rgb(224, 218, 218);/*rgb(44, 35, 36);/*rgb(52, 51, 56);*/
-
+  background-color: rgb(227, 226, 222);
 }
 
 #portofolio h1{
-  font-family: Arima Madurai, cursive;
+  font-weight: 700;
   padding:25px 0;
   }
-
+#project_line_one{
+}
 #portofolio_text{
-  font-family:dosisregular,sans-cherif;
   font-size:25px;
   text-align:center;
   margin-bottom:50px;
@@ -239,16 +276,15 @@ img{
 }
 
 .projects{
-  background:rgb(68, 40, 41);
-  border:2px solid rgb(68, 40, 41);
   margin-bottom: 50px;
 }
 .project_title{
-  font-family: Arima Madurai, cursive;
   color:rgb(149, 149, 149);
   font-size:25px;
 }
-
+#project_calculator, #project_tic_tac_toe,#project_pomodoro_clock, #project_simon_game{
+  opacity:0;
+}
 @media screen and (max-width:768px){
   .projects{
     width:80%;
@@ -256,35 +292,47 @@ img{
     margin-right:auto;
   }
 }
+.row{
 
+}
 /* **********************************************
 
         skills  section style
 
 ************************************************/
-.language{
-  border:1px solid black;
-  border-radius:5px;
+#language{
+
+font-size: 100px;
+width:60%;
+margin:100px auto;
 }
-#programming{
-  padding:0;
-  margin-bottom: 50px;
-}
-#programming img{
-  height:90px;
-  width:auto;
-  margin:5px;
-}
+
 #skills{
-  background: rgb(249, 243, 218);
+
+  font-family: 'Libre Franklin', sans-serif;
   padding:100px 0 ;
+}
+
+.skills_item{
+  display:inline-block;
+  width:100px;
+}
+.skills_item i{
+  display:block;
+  color:rgb(17, 171, 180);
+  font-size: 100px;
+  margin:0 auto;
+}
+.skills_item p{
+   font-size: 18px;
+  text-align: center;
 }
 #skills h1{
   padding:10px 0 20px;
-  color:rgb(0,0,0);
+  color:rgb(17, 171, 180);
   font-size:40px;
+  font-weight: 700;
   text-align:center;
-  font-family: Arima Madurai, cursive;
 }
 
 #skills h2{
@@ -293,31 +341,24 @@ img{
   padding:5px;
   font-size:25px;
   text-align:center;
-  font-family:"dosisregular",sans-cherif;
 }
 
 #skills_intro{
   text-align:justify;
   padding:25px;
-  color:rgb(40, 38, 31);
+  margin:0 auto;
+  width:75%;
+  color:rgb(174, 168, 168);
+  border-bottom: 5px solid rgb(17, 171, 180);
+  border-top: 5px solid rgb(17, 171, 180);
   font-size:25px;
-  font-family:dosisregular,sans-cherif;
   line-height:50px;
-  -webkit-animation-name:zoomIn 3s;
-  animation:zoomIn 3s;
-
 }
 
 #skills_wrapper{
   padding-top:50px;
 }
 
-
-.webdevelopment{
-  margin-bottom: 50px;
-  border:1px solid black;
-  border-radius:5px;
-}
 /***********************end of skills section**************************/
 
 
@@ -334,20 +375,19 @@ img{
 }
 
 #contacts{
+  color:rgb(153, 153, 153);
+  background-color: rgb(227, 226, 222);
   font-size: 25px;
-  border:1px solid black;
   padding:50px 0;
   text-align: center;
-  background:rgb(15, 23, 33);
-  font-family: 'Acme', sans-serif;
-  color:white;
 }
 #dev_profiles{
 
 }
 #dev_profiles button{
-  background: white;
   margin:0 5px;
+  border:none;
+  color:rgb(153, 153, 153);
   border-radius:50%;
 }
 #mobile, #email{
@@ -364,11 +404,10 @@ img{
 ************************************************/
 
 footer{
-  margin:-15px;
+  border-top:1px solid ;
+  background-color: rgb(227, 226, 222);
   padding:10px;
   text-align:center;
-  color:rgb(255,255,255);
-  background-color:rgb(47, 79, 79);
 }
 
 /***********************end of footer **************************/
