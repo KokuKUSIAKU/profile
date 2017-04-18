@@ -1,3 +1,4 @@
+
 body{
   background-color: rgb(64, 64, 64);
   padding:0;
@@ -7,12 +8,15 @@ body{
   margin:0;
 }
 
-/*   menu style*/
+/* **********************
+  menu style
+**************************/
 #menu{
+  color:rgb(17, 171, 180);
   padding:0 15px 0 0;
 }
 #menu a{
- color:rgb(153, 153, 153);
+ /*color:rgb(153, 153, 153);*/
 }
 
 #menu ul{
@@ -22,11 +26,20 @@ body{
 #name{
   padding-left:20px;
   padding-right: 20px;
-  background-color: rgb(255,255,255);
   border-radius: 5px;
   font-size:20px;
+  font-family: "Courgette", cursive;
   line-height: 50px;
-  color:rgb(153, 153, 153);
+  font-weight: 600;
+  /* background by Atle Mo & Lea Verou */
+  background:
+    radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#282828;
+    background-size:16px 16px;
+
 }
 
 nav{
@@ -37,6 +50,12 @@ nav{
 }
 .navbar-brand, .navbar-nav {
   padding:0;
+}
+.navbar-header button{
+  background: rgb(149,149,149);
+}
+.navbar-header .icon-bar{
+  background:rgb(17, 171, 180);
 }
 .navbar-header span{
   font-size: 2px;
@@ -72,12 +91,10 @@ nav{
 
  #announce span{
    font-size:45px;
-   color:rgb(0,0,0);
+   color:rgb(17, 171, 180);
    font-weight:bold;
  }
- span#me{
-   color:rgb(174, 176, 175);!important
- }
+
  #announce_wrapper{
    position:relative;
    width:100%;
@@ -85,9 +102,14 @@ nav{
    display:table;
  }
 
+ span#me{
+   color:rgb(174, 176, 175);!important
+ }
+
 #more_about{
   font-size:60px;
   height: 30%;
+  visibility: hidden;
   padding-top:20px;
   text-align:center;
   -webkit-animation:move 2s infinite;
@@ -213,10 +235,17 @@ nav{
 
 .projects{
   margin-bottom: 50px;
+  padding:0;
+}
+.projects h2{
+  margin:0;/* override less*/
+  padding-top:10px;
+  padding-bottom: 10px;
 }
 .project_title{
   color:rgb(149, 149, 149);
   font-size:25px;
+  margin-bottom:0;
 }
 #project_calculator, #project_tic_tac_toe,#project_pomodoro_clock, #project_simon_game{
   opacity:0;
@@ -237,12 +266,12 @@ nav{
   font-size: 100px;
   width:60%;
   margin:100px auto;
+  opacity:0;
 }
 
 #skills{
   font-family: 'Libre Franklin', sans-serif;
-  padding:100px 0 ;
-}
+  }
 
 .skills_item{
   display:inline-block;
@@ -275,16 +304,20 @@ nav{
 }
 
 #skills_intro{
-  text-align:justify;
-  padding:25px;
+  /*text-align:justify;*/
+  padding:25px 0;
   margin:0 auto;
-  width:75%;
+  width:90%;
   color:rgb(174, 168, 168);
   border-bottom: 5px solid rgb(17, 171, 180);
   border-top: 5px solid rgb(17, 171, 180);
   font-size:25px;
   line-height:50px;
 }
+#skills_intro strong{
+  color:rgb(17, 171, 180);
+}
+
 
 #skills_wrapper{
   padding-top:50px;
