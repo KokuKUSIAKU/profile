@@ -62,7 +62,7 @@
       </div>
       <div class="container">
       <div id="project_line_one" class="row">
-        <div id="project_calculator" class="projects col-sm-4">
+        <div id="project_calculator" class="projects animated col-sm-4">
           <a href ="https://kokukusiaku.github.io/JS-Calculator/" target ="_blank">
             <div class="img_wrapper">
               <img src="https://github.com/KokuKUSIAKU/profile/blob/master/projects-images/JS_Calculator_.png?raw=true" alt ="Calculator image unavailable">
@@ -74,7 +74,7 @@
           <div class="project_title"><h2>JS Calculator</h2></div>
           </a>
         </div>
-        <div id="project_tic_tac_toe" class="projects col-sm-4">
+        <div id="project_tic_tac_toe" class="projects animated col-sm-4">
           <a href="http://codepen.io/kkusiaku/full/PpEXGO" target ="_blank">
             <div class="img_wrapper">
               <img src="https://github.com/KokuKUSIAKU/profile/blob/master/projects-images/Tic_Tac_Toe_.png?raw=true" alt ="IMAGE UNAVAILABLE">
@@ -86,7 +86,7 @@
             <div class="project_title"><h2>Tic Tac Toe Game</h2></div>
           </a>
         </div>
-        <div id="project_pomodoro_clock" class="projects  col-sm-4 ">
+        <div id="project_pomodoro_clock" class="projects animated col-sm-4 ">
           <a href="http://codepen.io/kkusiaku/full/WpdLMY" target ="_blank">
             <div class="img_wrapper">
               <img src="https://github.com/KokuKUSIAKU/profile/blob/master/projects-images/pomodoro_clock_.png?raw=true" alt ="IMAGE UNAVAILABLE">
@@ -100,7 +100,7 @@
         </div>
       </div>
       <div id="project_line_two" class="row">
-        <div id="project_freecodecampboard" class="projects  col-sm-4">
+        <div id="project_freecodecampboard" class="projects animated col-sm-4">
           <a href ="http://codepen.io/kkusiaku/full/KmKZdY" target ="_blank">
             <div class="img_wrapper">
               <img src="https://github.com/KokuKUSIAKU/profile/blob/master/projects-images/FCC_leader_board_.png?raw=true" alt ="IMAGE UNAVAILABLE">
@@ -113,7 +113,7 @@
             <div class="project_title"><h2>FCC Leader Board</h2></div>
           </a>
         </div>
-        <div id="project_recipebox" class="projects col-sm-4">
+        <div id="project_recipebox" class="projects animated col-sm-4">
           <a href="https://kokukusiaku.github.io/recipebox/" target ="_blank">
             <div class="img_wrapper">
               <img src="https://github.com/KokuKUSIAKU/profile/blob/master/projects-images/recipebox_react_.png?raw=true" alt ="IMAGE UNAVAILABLE">
@@ -125,7 +125,7 @@
             <div class="project_title"><h2>FCC Recipe Box Page</h2></div>
           </a>
         </div>
-        <div id="project_corporate_one" class="projects col-sm-4">
+        <div id="project_corporate_one" class="projects animated col-sm-4">
           <a href="https://kokukusiaku.github.io/Corporate-template-one/" target ="_blank">
             <div class="img_wrapper">
               <img src="https://github.com/KokuKUSIAKU/profile/blob/master/projects-images/Template_corporate_one_.png?raw=true" alt ="IMAGE UNAVAILABLE">
@@ -198,9 +198,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script>
-      var project = $('.projects');
-      var description = $('.projects_description');
-      var waypoints = project.waypoint(function(direction) {
+      var waypoints =$('.animated').waypoint(function(direction) {
          $(this.element).addClass("zoomIn").css('opacity',1);
       },{
         offset:'80%'

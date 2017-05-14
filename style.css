@@ -244,7 +244,7 @@ nav{
   display: inline-block; 
   vertical-align: middle;
   color:rgb(255,255,255);
-  font-size: 25px;
+  font-size: 16px;
   width:80%;
 }
 
@@ -260,7 +260,8 @@ nav{
 #project_pomodoro_clock,
 #project_simon_game, 
 #project_freecodecampboard, 
-#project_recipebox {
+#project_recipebox, 
+#project_corporate_one {
   opacity:0;
 }
 
