@@ -8,15 +8,10 @@ body{
   margin:0;
 }
 
-/* **********************
-  menu style
-**************************/
+
 #menu{
   color:rgb(17, 171, 180);
   padding:0 15px 0 0;
-}
-#menu a{
- /*color:rgb(153, 153, 153);*/
 }
 
 #menu ul{
@@ -67,11 +62,6 @@ nav{
   }
 }
 
-
-/**************************************************
-   page head section
-
-***************************************************/
 
  #announce{
    display:table-cell;
@@ -138,15 +128,11 @@ nav{
   }
 }
 
-/* **********************************************
 
-          About me section style
-
- ************************************************/
 #about_me{
   padding:100px 0;
   font-family: 'Libre Franklin', sans-serif;
-  background:rgb(255,255,255);/*rgb(88, 183, 146);*/
+  background:rgb(255,255,255);
   text-align:center;
   height:100vh;
   opacity: 0;
@@ -196,13 +182,12 @@ nav{
   }
 }
 
-/* **********************************************
-
-         portofolio  section style
-
-************************************************/
 .img_wrapper{
   position:relative;
+  width:25vw;
+  height:20vw;
+  overflow: hidden;
+  border:1px solid red;
   margin:10px;
 }
 
@@ -237,31 +222,62 @@ nav{
   margin-bottom: 50px;
   padding:0;
 }
-.projects h2{
-  margin:0;/* override less*/
-  padding-top:10px;
-  padding-bottom: 10px;
+.projects:hover .projects_description{
+  opacity:1;
 }
+.projects_description{
+  position:absolute;
+  top:0; 
+  opacity:0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  font-size:0;
+  background: rgba(0,0,0,.75);
+}
+.projects_description .v_align_helper{
+  display:inline-block; 
+  vertical-align: middle; 
+  height: 100%;
+}
+.projects_description p{
+  display: inline-block; 
+  vertical-align: middle;
+  color:rgb(255,255,255);
+  font-size: 25px;
+  width:80%;
+}
+
 .project_title{
+  margin:0;
+  padding:10px 0;
   color:rgb(149, 149, 149);
   font-size:25px;
-  margin-bottom:0;
 }
-#project_calculator, #project_tic_tac_toe,#project_pomodoro_clock, #project_simon_game{
+
+#project_calculator, 
+#project_tic_tac_toe,
+#project_pomodoro_clock,
+#project_simon_game, 
+#project_freecodecampboard, 
+#project_recipebox {
   opacity:0;
 }
+
 @media screen and (max-width:768px){
   .projects{
     width:80%;
     margin-left:auto;
     margin-right:auto;
   }
+  
+  .img_wrapper{
+    width:80vw;
+    height: 66vw;
+  }
 }
-/* **********************************************
 
-        skills  section style
 
-************************************************/
 #language{
   font-size: 100px;
   width:60%;
@@ -304,7 +320,6 @@ nav{
 }
 
 #skills_intro{
-  /*text-align:justify;*/
   padding:25px 0;
   margin:0 auto;
   width:90%;
@@ -323,14 +338,7 @@ nav{
   padding-top:50px;
 }
 
-/***********************end of skills section**************************/
 
-
-/* **********************************************
-
-       contacts  section style
-
-************************************************/
 #address p{
   margin:0 10px;
 }
@@ -354,13 +362,7 @@ nav{
   display:inline-block;
 }
 
-/***********************end of contacts section**************************/
 
-/* **********************************************
-
-       footer style
-
-************************************************/
 
 footer{
   border-top:1px solid ;
@@ -369,12 +371,14 @@ footer{
   text-align:center;
 }
 
-/***********************end of footer **************************/
+
 
 /* animation of some components */
 .zoomIn{
-  -webkit-animation-name:zoomIn 5s;
+  -webkit-animation:zoomIn 5s;
+  -webkit-animation-fill-mode: forwards;/* for some reason it doesn't work!*/
   animation:zoomIn 5s;
+  animation-fill-mode: forwards;
 }
 @keyframes zoomIn {
   from {
